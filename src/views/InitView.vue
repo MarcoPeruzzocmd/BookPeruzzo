@@ -1,7 +1,12 @@
+<script setup>
+import InitVue from '@/components/InitVue.vue';
+
+</script>
+
 <template>
-  <h1>a</h1>
+<InitVue/>
 </template>
 
-<style>
+<style scoped>
 
 </style>
