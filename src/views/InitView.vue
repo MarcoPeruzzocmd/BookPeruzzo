@@ -1,10 +1,11 @@
 <script setup>
 import InitVue from '@/components/InitVue.vue';
 
+
 </script>
 
 <template>
-<InitVue/>
+    <InitVue/>
 </template>
 
 <style scoped>
