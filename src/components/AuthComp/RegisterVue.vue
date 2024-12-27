@@ -19,7 +19,7 @@
             <input type="password" name="" id="" placeholder="Confirme sua senha">
             <input class="submit" type="submit" value="Get Started">
     </div>
-    <a href="">Forgot Password?</a>
+    <a href="">Already a member? SignIn</a>
     </div>
 </div>
 </template>
