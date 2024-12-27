@@ -46,6 +46,11 @@ button{
     background-color: black;
     color: white;
     font-size: 14px;
+    cursor: pointer;
+}
+.start:hover{
+    background-color: rgb(28, 26, 26);
+    transition: 200ms;
 }
 .register{
     margin-top: 40px;
@@ -54,9 +59,10 @@ button{
     outline: none;
     font-size: 16px;
     border: 1px solid;
-
+    cursor: pointer;
 }
 .register:hover{
-    background-color: rgb(238, 237, 237);
+    background-color: rgb(240, 237, 237);
+    transition: 200ms;
 }
 </style>
