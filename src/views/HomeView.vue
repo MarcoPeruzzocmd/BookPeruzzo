@@ -1,11 +1,8 @@
 <script setup>
-import InitVue from '@/components/InitVue.vue';
-
-
-
+import HomeVue from '@/components/HomeComp/HomeVue.vue';
 
 </script>
 
 <template>
-    <InitVue/>
+    <HomeVue/>
 </template>

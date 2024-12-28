@@ -1,11 +1,15 @@
 <script setup>
-
+import { useRouter } from 'vue-router';
+const router = useRouter();
+function redirectInit(){
+    router.push('/');
+};
 </script>
 
 <template>
 <div class="container">
     <div class="topPage">
-        <img src="/src/assets/back.png" alt="">
+        <img @click="redirectInit" src="/src/assets/back.png" alt="">
     <div class="tittle">
         <h1>Get Started</h1>
     </div>

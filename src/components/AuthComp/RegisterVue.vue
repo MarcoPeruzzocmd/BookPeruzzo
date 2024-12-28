@@ -1,69 +1,80 @@
 <script setup>
-
+import { useRouter } from 'vue-router';
+const router = useRouter();
+function redirectInit(){
+    router.push('/');
+};
 </script>
 
 <template>
-<div class="container">
-    <div class="topPage">
-        <img src="/src/assets/back.png" alt="">
-    <div class="tittle">
-        <h1>Get Started</h1>
+    <div class="container">
+        <div class="topPage">
+            <img @click="redirectInit" src="/src/assets/back.png" alt="">
+            <div class="tittle">
+                <h1>Get Started</h1>
+            </div>
+        </div>
+        <div class="content">
+            <div class="login">
+                <p>Please fill your details to login.</p>
+                <input type="text" placeholder="Username">
+                <input type="email" name="" id="" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="password" name="" id="" placeholder="Confirme sua senha">
+                <button class="submit">REGISTER</button>
+            </div>
+            <a href="">Already a member? SignIn</a>
+        </div>
     </div>
-    </div>
-    <div class="content">
-    <div class="login">
-            <p>Please fill your details to login.</p>
-            <input type="text" placeholder="Username">
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" placeholder="Senha">
-            <input type="password" name="" id="" placeholder="Confirme sua senha">
-            <button class="submit">REGISTER</button>
-    </div>
-    <a href="">Already a member? SignIn</a>
-    </div>
-</div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-.topPage{
+.topPage {
     display: flex;
     align-items: center;
     margin-top: 60px;
 }
-img{
+
+img {
     width: 24px;
     height: 24px;
     margin-left: 16px;
     cursor: pointer;
 }
-.tittle{
+
+.tittle {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-h1{
+
+h1 {
     font-size: 24px;
     font-weight: bold;
     font-family: "Open Sans", serif;
 }
-.content{
+
+.content {
     margin-top: 72px;
     display: flex;
     flex-direction: column;
 }
-p{
+
+p {
     text-align: justify;
     font-size: 16px;
     font-family: "Open Sans", serif;
     margin-bottom: 32px;
 }
-.login{
+
+.login {
     margin: auto;
 }
-input{
+
+input {
     display: flex;
     width: 320px;
     height: 56px;
@@ -73,7 +84,8 @@ input{
     padding-left: 11px;
     font-size: 15px;
 }
-.submit{
+
+.submit {
     width: 334px;
     background-color: black;
     color: white;
@@ -83,17 +95,18 @@ input{
     border-radius: 5px;
     height: 56px;
 }
-.submit:hover{
+
+.submit:hover {
     background-color: transparent;
     color: black;
     transition: 250ms;
 }
-a{
+
+a {
     text-align: center;
     font-size: 17px;
     margin-top: 24px;
     color: black;
     font-family: "Open Sans", serif;
 }
-
 </style>

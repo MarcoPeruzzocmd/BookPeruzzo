@@ -1,5 +1,12 @@
 <script setup>
-
+import { useRouter } from 'vue-router';
+const router = useRouter();
+function redirectLogin(){
+    router.push('/login');
+};
+function redirectRegister(){
+    router.push('/register');
+};
 </script>
 
 <template>
@@ -7,8 +14,8 @@
         <div class="content">
             <img src="/src/assets/logoSite.png" alt="">
             <p>Read more and stress less with our online book shopping app. Shop from anywhere you are and discover titles that you love. Happy reading!</p>
-            <button class="start">Get Started</button>
-            <button class="register">Register</button>
+            <button @click="redirectLogin" class="start">Get Started</button>
+            <button @click="redirectRegister" class="register">Register</button>
         </div>
     </div>
 </template>
