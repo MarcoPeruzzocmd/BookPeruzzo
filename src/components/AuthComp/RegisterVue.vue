@@ -17,7 +17,7 @@
             <input type="email" name="" id="" placeholder="Email">
             <input type="password" placeholder="Senha">
             <input type="password" name="" id="" placeholder="Confirme sua senha">
-            <input class="submit" type="submit" value="Get Started">
+            <button class="submit">REGISTER</button>
     </div>
     <a href="">Already a member? SignIn</a>
     </div>
@@ -78,6 +78,10 @@ input{
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-top: 24px;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 56px;
 }
 .submit:hover{
     background-color: transparent;

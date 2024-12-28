@@ -15,7 +15,7 @@
             <p>Please fill your details to login.</p>
             <input type="text" placeholder="Username/Email">
             <input type="password" placeholder="Senha">
-            <input class="submit" type="submit" value="Get Started">
+            <button class="submit">LOGIN</button>
     </div>
     <a href="">Forgot Password?</a>
     <a class="register" href="">New member? Register</a>
@@ -77,6 +77,10 @@ input{
     background-color: black;
     color: white;
     cursor: pointer;
+    margin-top: 24px;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 56px;
 }
 .submit:hover{
     background-color: transparent;
